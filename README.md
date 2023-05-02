@@ -11,7 +11,7 @@ El proyecto requiere lo siguiente para su optimo funcionamiento:
 - NPM 8.19.2
 
 Para empezar, es necesario **descomprimir el contenido de la carpeta del proyecto**, o bien, clonar el repositorio utilizando
-`git clone https://github.com/aacofsa/dogger_app.git`
+`git clone https://github.com/Metalcl/Tinderdog2.git`
 
 ### Instalación en `Windows`:
 1) Abre tu consola de preferencia y accede al directorio en donde clonaste el proyecto:
@@ -33,5 +33,6 @@ Para iniciar el proyecto (Levantar el servidor de pruebas), deberás utilizar `n
 `(En caso que no se visualice correctamente instalar manualmente 'Material ui' y 'axios')`
 
 ### Integrantes:
-Ailyn Cofre Saez / 19.595.946-3 / ICINF.
-Francisco Ojeda Casanueva / 19.533.298-3 / IECI.
+`Ailyn Cofre Saez / 19.595.946-3 / ICINF.`
+
+`Francisco Ojeda Casanueva / 19.533.298-3 / IECI.`
