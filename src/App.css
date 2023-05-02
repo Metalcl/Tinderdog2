@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    background-image: url('./assets/wallpaperDog.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Roboto', 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Oxygen', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden;
+}
+#root {
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.title {
+    text-align: center;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 15px 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.dog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-dog {
+    border: 1px solid #252525;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.img-dog {
+    border: 1px solid #252525;
+    max-width: 100%;
+    height: 200px;
+}
+.name-dog {
+    text-transform: capitalize;
+    padding: 0 !important;
+    font-weight: 300;
+    font-size: 2.125rem;
+}
+.container-reactions {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 0 !important;
+}
+.no-charge-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 200px;
+    background-color: lightgray;
+}
+.perrito-pre-load{
+    height: 90%;
+    width: auto;
+}
+.icons-dissable {
+    color: lightgray;
+}
+.list {
+    overflow: auto;
+}
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+    }
+    .dog {
+        grid-column: 1/4;
+    }
+    .approve {
+        grid-column: 1/2;
+        align-items: center;
+    }
+    .reject {
+        grid-column: 3/4;
+    }
+}
+.favorite-icon:hover {
+    color: #EE6D7A;
+    animation: heartbeat 0.7s ease-in-out infinite;
+}
+.hover-favorite:hover {
+    color: #EE6D7A;
+}
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.heartbroken-icon:hover {
+    color: #3A3335;
+    animation: shake 0.5s ease-in-out infinite;
+}
+.hover-heartbroken:hover {
+    color: #3A3335;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.rotate-icon:hover {
+    color: #3A3335;
+    animation: rotate 0.8s ease-in-out infinite;
+}
+.hover-rotate:hover {
+    color: #3A3335;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.expand-icon:hover {
+    color: #3A3335;
+    animation: jump 0.5s infinite alternate;
+}
+.hover-expand{
+    color: #3A3335;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
